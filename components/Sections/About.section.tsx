@@ -9,7 +9,7 @@ const About: NextComponentType = () => {
   return (
     <div className="my-8 flex flex-row items-center justify-between px-3 font-sen">
       <div>
-        <p className="text-3xl font-bold text-white">Anurag</p>
+        <p className="text-3xl font-bold text-white">Hakim Takiyuddin</p>
         <p className="mt-1 text-lg text-gray-300">
           Frontend Developer, Blogger and a Student
         </p>
