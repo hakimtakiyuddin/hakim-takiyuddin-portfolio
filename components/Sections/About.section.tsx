@@ -33,9 +33,21 @@ const About: NextComponentType = () => {
         </p>
         <div className="container  pr-10">
           <p className="mt-4 text-gray-400">
-            An assoicate software engineer in Setel, first pay, pump and go apps
-            in Malaysia 🇲🇾 A long live student in tech world and looking forward
-            for new opportunity and exiciting journey.
+            An associate software engineer in Setel 🇲🇾 A long live student in a
+            big tech world and looking forward for new opportunity and exiciting
+            journey. Goes with a slogan <br />
+            <RoughNotation
+              type={"highlight"}
+              animate={true}
+              show={true}
+              color="green"
+              animationDuration={4000}
+            >
+              <span className="text-white">
+                If you want to win the lottery you have to make the money to buy
+                a ticket
+              </span>
+            </RoughNotation>
           </p>
         </div>
 
