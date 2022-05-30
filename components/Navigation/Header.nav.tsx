@@ -4,6 +4,7 @@ import Link from "next/link";
 import { VscGithubAlt } from "../Misc/Icons.collection";
 
 import type { linkProps } from "../../@types/prop.types";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 const TextLink: NextComponentType<NextPageContext, {}, linkProps> = ({
   text,
@@ -32,14 +33,14 @@ const Header: NextComponentType = () => {
         <TextLink text="Contact" url="#contact" />
       </p>
 
-      <Link href="https://github.com/hakimtakiyuddin/hakim-takiyuddin-portfolio" passHref>
+      <Link href="https://www.linkedin.com/in/hakimtakiyuddin/" passHref>
         <a
           className="float-right mr-2 rounded-lg bg-zinc-800 p-2 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2 sm:float-none sm:mr-0"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="github-repo"
         >
-          <VscGithubAlt />
+          <AiOutlineLinkedin />
         </a>
       </Link>
     </header>
