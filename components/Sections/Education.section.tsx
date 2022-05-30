@@ -18,8 +18,8 @@ const Education: NextComponentType = () => {
         Education 🎓
       </h1>
 
-      <div className="text-md my-4">
-        <Grid container spacing={2} className="my-10 px-3 ">
+      <div className="my-4">
+        <Grid container spacing={2} className="my-10 px-3 pt-20">
           <Grid item xs={6}>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <div className="experience-card relative z-10 mx-4 rounded-md border bg-white p-4 shadow-xl dark:bg-gray-800">
