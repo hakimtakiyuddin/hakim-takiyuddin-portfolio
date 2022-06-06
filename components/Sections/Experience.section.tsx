@@ -49,7 +49,7 @@ const Experience: NextComponentType = () => {
   return (
     <section>
       <div className="my-16 px-3 font-sen text-white" id="experience">
-        <h1 className="text-center text-5xl font-bold md:text-center md:text-6xl">
+        <h1 className="text-center text-4xl font-bold md:text-center md:text-6xl">
           Experience 👔
         </h1>
         <div className="-mt-4 ">
@@ -92,15 +92,15 @@ const ExperienceCard = ({
   skills,
 }) => {
   return (
-    <div className="experience-card relative z-10 mx-4 rounded-md border bg-white p-4 shadow-xl dark:bg-gray-800">
-      <h1 className="dark:text-grey-800 absolute -top-10 text-4xl font-bold text-gray-500 md:-left-10 md:-top-10">
+    <div className="experience-card relative z-10 mx-4 rounded-md border bg-gray-800 p-4 shadow-xl">
+      <h1 className="text-grey-500 absolute -top-10 text-4xl font-bold md:-left-10 md:-top-10">
         {year}
       </h1>
       <h1 className="text-xl font-semibold">{title}</h1>
       <a href={companyLink} className="text-gray-500">
         {company}
       </a>
-      <p className="my-2 text-gray-600 dark:text-gray-400">{desc}</p>
+      <p className="my-2 text-gray-400">{desc}</p>
       <p className="text-gray text-base text-slate-300 ">
         <span className="text-white">Skills:</span>&nbsp;
         {skills}

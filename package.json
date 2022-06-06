@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.8.1",
     "@fontsource/jost": "^4.5.6",
     "@fontsource/sen": "^4.5.3",
+    "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.8.1",
     "@react-icons/all-files": "^4.1.0",
     "@types/node": "^17.0.22",
@@ -27,8 +28,6 @@
     "react-devicon": "^0.1.9",
     "react-dom": "17.0.2",
     "react-rough-notation": "^1.0.2",
-    "react-skillbars": "^2.0.1",
-    "react-skills": "^1.27.0",
     "rough-notation": "^0.5.1",
     "sass": "^1.49.10",
     "swr": "^1.2.2"

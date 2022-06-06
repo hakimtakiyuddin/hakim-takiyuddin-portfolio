@@ -2,7 +2,6 @@ import { BsArrowRightShort } from "../Misc/Icons.collection";
 import { DiCss3, DiHtml5, DiPhp } from "react-icons/di";
 import { IoLogoJavascript, IoLogoReact } from "react-icons/io5";
 import { SiLaravel, SiNestjs, SiNextdotjs, SiTypescript } from "react-icons/si";
-import { RoughNotation } from "react-rough-notation";
 import { Collapse, List, ListItem, ListItemButton } from "@mui/material";
 import * as React from "react";
 import { BsArrowDownShort } from "react-icons/bs";
@@ -17,7 +16,7 @@ const ProgrammingSkills = () => {
     <div className="border-b-[0.1px] border-gray-500 ">
       <List>
         <ListItemButton onClick={handleClick}>
-          <p className="flex cursor-pointer flex-row  items-center py-1 text-lg text-slate-300 duration-100 hover:ml-2">
+          <p className="flex cursor-pointer flex-row  items-center py-1 text-base text-slate-300 duration-100 hover:ml-2 md:text-lg">
             {open ? (
               <BsArrowDownShort size="30" />
             ) : (
@@ -30,35 +29,35 @@ const ProgrammingSkills = () => {
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">HTML</span>
                 <DiHtml5 />
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row  items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row  items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">CSS</span>
                 <DiCss3 />
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row  items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row  items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">PHP</span>
                 <DiPhp />
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row  items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row  items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">Javascript</span>
                 <IoLogoJavascript />
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 pb-4 text-base text-slate-300 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 pb-4 text-sm text-slate-300 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">Typescript</span>
                 <SiTypescript />
@@ -81,7 +80,7 @@ const Framework = () => {
     <div className="border-b-[0.1px] border-gray-500 ">
       <List>
         <ListItemButton onClick={handleClick}>
-          <p className="flex cursor-pointer flex-row  items-center py-1 text-lg text-slate-300 duration-100 hover:ml-2">
+          <p className="flex cursor-pointer flex-row  items-center py-1 text-base text-slate-300 duration-100 hover:ml-2 md:text-lg">
             {open ? (
               <BsArrowDownShort size="30" />
             ) : (
@@ -94,28 +93,28 @@ const Framework = () => {
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">Laravel</span>
                 <SiLaravel />
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">React</span>
                 <IoLogoReact />
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">NestJS</span>
                 <SiNestjs />
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 pb-4 text-base text-slate-300 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 pb-4 text-sm text-slate-300 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="pr-2 text-white">NextJs</span>
                 <SiNextdotjs />
@@ -138,7 +137,7 @@ const CommunicationLanguage = () => {
     <div className="border-b-[0.1px] border-gray-500 ">
       <List>
         <ListItemButton onClick={handleClick}>
-          <p className="flex cursor-pointer flex-row  items-center py-1 text-lg text-slate-300 duration-100 hover:ml-2">
+          <p className="flex cursor-pointer flex-row  items-center py-1 text-base text-slate-300 duration-100 hover:ml-2 md:text-lg">
             {open ? (
               <BsArrowDownShort size="30" />
             ) : (
@@ -151,14 +150,14 @@ const CommunicationLanguage = () => {
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-base text-slate-200 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-sm text-slate-200 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="text-white">English </span> &nbsp;:
                 Conversational & Professional
               </p>
             </ListItem>
             <ListItem>
-              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-base text-slate-300 duration-100 hover:ml-2">
+              <p className="text-gray	flex cursor-pointer flex-row items-center py-1 text-sm text-slate-300 duration-100 hover:ml-2 md:text-base">
                 <BsArrowRightShort size="20" />
                 <span className="text-white">Malay</span> &nbsp;: Native
               </p>
@@ -173,7 +172,7 @@ const CommunicationLanguage = () => {
 const Skills = () => {
   return (
     <div className="my-5 px-3 font-sen text-white" id="skills">
-        <h1 className="text-center text-5xl font-bold md:text-center md:text-6xl">
+        <h1 className="text-center text-4xl font-bold md:text-center md:text-6xl">
           Skills 🛠️
         </h1>
       <div className="text-md my-4 flex flex-col font-medium md:text-xl custom:text-lg">

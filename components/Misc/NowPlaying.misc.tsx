@@ -12,7 +12,7 @@ const SpotifyCard: NextComponentType = () => {
 
   return (
     <>
-      <div className="font-sen mb-8 flex max-w-full flex-row items-center gap-x-2 rounded-md text-center text-lg text-gray-300">
+      <div className="mb-8 flex max-w-full flex-row items-center gap-x-2 rounded-md text-center font-sen text-base text-gray-300 md:text-lg">
         <Image
           src="/assests/spotify.svg"
           width="30"
@@ -20,14 +20,14 @@ const SpotifyCard: NextComponentType = () => {
           alt="spotify icon"
         />
         {data?.isPlaying ? (
-            <Link href={data?.songUrl} passHref>
-              <p className="cursor-pointer truncate">
-                I&apos;m currently listening to{" "}
-                <span className="text-white">{data?.title}</span>.
-              </p>
-            </Link>
+          <Link href={data?.songUrl} passHref>
+            <p className="cursor-pointer truncate">
+              I&apos;m currently listening to{" "}
+              <span className="text-white">{data?.title}</span>.
+            </p>
+          </Link>
         ) : (
-            <p>I&apos;m currently not listening to anything.</p>
+          <p>I&apos;m currently not listening to anything.</p>
         )}
       </div>
     </>
