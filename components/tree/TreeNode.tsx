@@ -21,7 +21,7 @@ export function TreeNode({ id, last, defaultOpen }: { id: SectionId; last: boole
     <li className="relative pl-6">
       <span aria-hidden="true" className={`absolute top-0 left-0 w-px bg-line ${last ? "h-[1.375rem]" : "h-full"}`} />
       <span aria-hidden="true" className="absolute top-[1.375rem] left-0 h-px w-4 bg-line" />
-      <details id={id} open={defaultOpen} className="group scroll-mt-4">
+      <details id={id} open={defaultOpen} className="group scroll-mt-14">
         <summary
           onClick={onSummaryClick}
           className="flex min-h-11 cursor-pointer list-none items-center gap-2 [&::-webkit-details-marker]:hidden"

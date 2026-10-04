@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// viewport-fit=cover lets the mobile bars pad for the notch and home indicator via env(safe-area-inset-*).
+export const viewport: Viewport = { viewportFit: "cover", themeColor: "#13141c" };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

@@ -64,6 +64,18 @@ describe("TreeLayout", () => {
     expect(details("whoami").open).toBe(false);
   });
 
+  it("frames the tree in a terminal window with a title bar and status bar", () => {
+    render(<TreeLayout />);
+    expect(screen.getByText("hakim-takiyuddin@portfolio: ~/whoami")).toBeInTheDocument();
+    expect(screen.getByText(/tap ▸ to open/)).toBeInTheDocument();
+  });
+
+  it("title bar path follows the section you open", () => {
+    render(<TreeLayout />);
+    fireEvent.click(summary("experience"));
+    expect(screen.getByText("hakim-takiyuddin@portfolio: ~/experience")).toBeInTheDocument();
+  });
+
   it("summary rows meet the 44px tap target class", () => {
     render(<TreeLayout />);
     expect(summary("skills")).toHaveClass("min-h-11");
