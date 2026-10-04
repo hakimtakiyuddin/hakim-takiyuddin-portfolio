@@ -30,7 +30,7 @@ export function TreeLayout() {
   return (
     <div className="flex min-h-dvh flex-col bg-bg lg:hidden">
       <div className="sticky top-0 z-10 border-b border-line bg-bg-deep pt-[env(safe-area-inset-top)]">
-        <TitleBar section={section} />
+        <TitleBar />
       </div>
       <div className="flex-1 px-4 py-6">
         <p>
