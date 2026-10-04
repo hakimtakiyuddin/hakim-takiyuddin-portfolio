@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #1a1b26;
+  --color-bg-deep: #13141c;
+  --color-line: #2a2f45;
+  --color-sel: #2f3549;
+  --color-fg: #f8f8f2;
+  --color-muted: #929dc0;
+  --color-purple: #bd93f9;
+  --color-pink: #ff79c6;
+  --color-cyan: #8be9fd;
+  --color-green: #50fa7b;
+  --color-orange: #ffb86c;
+  --color-red: #ff5555;
+}
+
+@theme inline {
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, Menlo, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-bg-deep);
+  color: var(--color-fg);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-pink);
+  outline-offset: 2px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes typing {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Wipe-reveal instead of a fixed width, so emoji or long names never get clipped. --chars sets the step count. */
+.typewriter {
+  display: inline-block;
+  max-width: 100%;
+  animation: typing 600ms steps(var(--chars)) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink,
+  .typewriter {
+    animation: none;
+  }
+}

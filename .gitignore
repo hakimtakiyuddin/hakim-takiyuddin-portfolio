@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# brainstorming companion
+.superpowers/
+
+# typescript
+*.tsbuildinfo
